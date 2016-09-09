@@ -2,13 +2,11 @@ public class Event {
 	private int people;
 	private double cost;
 	private int howMany;
-	private String shoppingCart;
 
 	public Event(int numberOfpeople){
 		people = numberOfpeople;
 		cost = 0;
 		howMany = numberOfpeople;
-		shoppingCart = "";
 	}
 
 	public boolean over(int userInput) {
