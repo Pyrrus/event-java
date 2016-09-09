@@ -36,4 +36,32 @@ public class EventTest {
     assertEquals(false, testEvent.over(userInput));
   }
 
+  @Test
+  public void runEvent_returnCostofFood() {
+    int numberOfpeople = 5;
+    Event testEvent = new Event(numberOfpeople);
+    testEvent.foodCost(2);
+    float output = testEvent.getCost();
+    assertEquals(75.0, output, 0.0f);
+  }
+
+  @Test
+  public void runEvent_returnCostofDrink() {
+    int numberOfpeople = 5;
+    Event testEvent = new Event(numberOfpeople);
+    testEvent.drinkCost(2);
+    float output = testEvent.getCost();
+    assertEquals(25.0, output, 0.0f);
+  }
+
+  @Test
+  public void runEvent_returnCostforDrinkandFood() {
+    int numberOfpeople = 5;
+    Event testEvent = new Event(numberOfpeople);
+    testEvent.drinkCost(2);
+    testEvent.foodCost(2);
+    float output = testEvent.getCost();
+    assertEquals(100.0, output, 0.0f);
+  }
+
 }
