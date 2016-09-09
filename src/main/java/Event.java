@@ -48,7 +48,7 @@ public class Event {
   // Also, return the cost of it
   public int foodCost(int type, int userInput) {
     if (type == 1) {
-      // light shanks like chips
+      // light food like chips
       cost += userInput * 3;
       return userInput * 3;
     } else if (type == 2) {

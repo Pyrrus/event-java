@@ -72,7 +72,7 @@ public class App {
       "entertainment"
     };
     String[] output = {
-      "What type of dish? \n1 for light shanks for $3 per dish, \n2 for good food for $15 per dish, \n3 for highend for $45 per dish: ",
+      "What type of dish? \n1 for light food for $3 per dish, \n2 for good food for $15 per dish, \n3 for highend for $45 per dish: ",
       "What type of Drink? \n1 for Water and pop for $1.5 per person, \n2 for beer and pop for $5 per person, \n3 for full bar for $16.5 per person: ",
       "What type of entertainment? \n1 for outdoor games for $100, \n2 for DJ player for $500, \n3 for Live Band for $1000: "
     };
