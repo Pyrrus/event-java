@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "event" // name of the project
+version = '1.0'
+mainClassName = "Event" //who have the public static void main(String[] args)
+
+repositories {
+ mavenCentral()
+}
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+}
