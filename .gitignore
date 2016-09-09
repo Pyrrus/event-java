@@ -37,4 +37,4 @@ Thumbs.db
 build/
 .gradle/
 junkfile
-.gradle/3.0/teskArtifacts
+.gradle/3.0/taskArtifacts
