@@ -24,6 +24,14 @@ public class Event {
 		return people;
 	}
 
+	public int getMany() {
+		return howMany;
+	}
+
+	public void setMany() {
+		howMany = people;
+	}
+
 	public double getCost() {
 		return cost;
 	}
@@ -57,6 +65,38 @@ public class Event {
 			// full bar
 			cost += people * 16.50;
 			return people * 16.50;
+		}
+	}
+
+	public int foodCost(int type, int userInput) {
+		if (type == 1) {
+			// light shanks like chips
+			cost += userInput * 3;
+			return userInput * 3;
+		} else if (type == 2) {
+			// good foods like hamburger
+			cost += userInput * 15;
+			return userInput * 15;
+		} else {
+			// highend foods like t bone
+			cost += userInput * 45;
+			return userInput * 45;
+		}
+	}
+
+	public double drinkCost(int type, int userInput) {
+		if (type == 1) {
+			// water and pop
+			cost += userInput * 1.5;
+			return userInput * 1.5;
+		} else if (type == 2) {
+			// can beer and pop
+			cost += userInput * 5;
+			return userInput * 5;
+		} else {
+			// full bar
+			cost += userInput * 16.50;
+			return userInput * 16.50;
 		}
 	}
 

@@ -84,6 +84,24 @@ public class EventTest {
   }
 
   @Test
+  public void runEvent_returnCostofDrink() {
+    int numberOfpeople = 5;
+    Event testEvent = new Event(numberOfpeople);
+    testEvent.drinkCost(2, 2);
+    double output = testEvent.getCost();
+    assertEquals(10.0, output, 0.0f);
+  }
+
+  @Test
+  public void runEvent_returnCostofFood() {
+    int numberOfpeople = 5;
+    Event testEvent = new Event(numberOfpeople);
+    testEvent.foodCost(2, 2);
+    double output = testEvent.getCost();
+    assertEquals(30.0, output, 0.0f);
+  }
+
+  @Test
   public void runEvent_returnCostforDrinkAllandFoodAllandEntertainment() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
