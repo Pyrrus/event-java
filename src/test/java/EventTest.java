@@ -10,15 +10,15 @@ public class EventTest {
 
   @Test
   public void runEvent_returnPeople() {
-  	Event testEvent = new Event(5);
-  	int numberOfpeople = testEvent.getPeople();
-  	assertEquals(5, numberOfpeople);
+    Event testEvent = new Event(5);
+    int numberOfpeople = testEvent.getPeople();
+    assertEquals(5, numberOfpeople);
   }
 
   @Test
   public void runEvent_returnCost() {
-  	Event testEvent = new Event(5);
-  	double cost = testEvent.getCost();
+    Event testEvent = new Event(5);
+    double cost = testEvent.getCost();
     assertEquals(0.0, cost, 0.0f);
   }
 
@@ -79,5 +79,4 @@ public class EventTest {
     double output = testEvent.getCost();
     assertEquals(30.0, output, 0.0f);
   }
-
 }
