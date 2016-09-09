@@ -18,7 +18,7 @@ public class EventTest {
   @Test
   public void runEvent_returnCost() {
   	Event testEvent = new Event(5);
-  	float cost = testEvent.getCost();
+  	double cost = testEvent.getCost();
     assertEquals(0.0, cost, 0.0f);
   }
 
@@ -41,7 +41,7 @@ public class EventTest {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
     testEvent.foodCostAll(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(75.0, output, 0.0f);
   }
 
@@ -50,7 +50,7 @@ public class EventTest {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
     testEvent.drinkCostAll(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(25.0, output, 0.0f);
   }
 
@@ -60,7 +60,7 @@ public class EventTest {
     Event testEvent = new Event(numberOfpeople);
     testEvent.drinkCostAll(2);
     testEvent.foodCostAll(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(100.0, output, 0.0f);
   }
 
@@ -69,7 +69,7 @@ public class EventTest {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
     testEvent.entertainmentCost(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(500.0, output, 0.0f);
   }
 
@@ -79,7 +79,7 @@ public class EventTest {
     Event testEvent = new Event(numberOfpeople);
     testEvent.drinkCostAll(2);
     testEvent.entertainmentCost(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(525.0, output, 0.0f);
   }
 
@@ -90,7 +90,7 @@ public class EventTest {
     testEvent.drinkCostAll(2);
     testEvent.foodCostAll(2);
     testEvent.entertainmentCost(2);
-    float output = testEvent.getCost();
+    double output = testEvent.getCost();
     assertEquals(600.0, output, 0.0f);
   }
 
