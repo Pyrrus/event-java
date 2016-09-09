@@ -32,34 +32,34 @@ public class EventTest {
   @Test
   public void runEvent_returnOverFalse() {
     Event testEvent = new Event(5);
-    int userInput = 8;
+    int userInput = 2;
     assertEquals(false, testEvent.over(userInput));
   }
 
   @Test
-  public void runEvent_returnCostofFood() {
+  public void runEvent_returnCostofFoodAll() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
-    testEvent.foodCost(2);
+    testEvent.foodCostAll(2);
     float output = testEvent.getCost();
     assertEquals(75.0, output, 0.0f);
   }
 
   @Test
-  public void runEvent_returnCostofDrink() {
+  public void runEvent_returnCostofDrinkAll() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
-    testEvent.drinkCost(2);
+    testEvent.drinkCostAll(2);
     float output = testEvent.getCost();
     assertEquals(25.0, output, 0.0f);
   }
 
   @Test
-  public void runEvent_returnCostforDrinkandFood() {
+  public void runEvent_returnCostforDrinkAllandFoodAll() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
-    testEvent.drinkCost(2);
-    testEvent.foodCost(2);
+    testEvent.drinkCostAll(2);
+    testEvent.foodCostAll(2);
     float output = testEvent.getCost();
     assertEquals(100.0, output, 0.0f);
   }
@@ -74,21 +74,21 @@ public class EventTest {
   }
 
   @Test
-  public void runEvent_returnCostofDrinkandEntertainment() {
+  public void runEvent_returnCostofDrinkAllandEntertainment() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
-    testEvent.drinkCost(2);
+    testEvent.drinkCostAll(2);
     testEvent.entertainmentCost(2);
     float output = testEvent.getCost();
     assertEquals(525.0, output, 0.0f);
   }
 
   @Test
-  public void runEvent_returnCostforDrinkandFoodandEntertainment() {
+  public void runEvent_returnCostforDrinkAllandFoodAllandEntertainment() {
     int numberOfpeople = 5;
     Event testEvent = new Event(numberOfpeople);
-    testEvent.drinkCost(2);
-    testEvent.foodCost(2);
+    testEvent.drinkCostAll(2);
+    testEvent.foodCostAll(2);
     testEvent.entertainmentCost(2);
     float output = testEvent.getCost();
     assertEquals(600.0, output, 0.0f);
