@@ -51,4 +51,17 @@ public class Event {
 			cost += people * 16.50;
 		}
 	}
+
+	public void entertainmentCost(int type) {
+		if (type == 1) {
+			// outdoor games like 
+			cost += 100;
+		} else if (type == 2) {
+			// DJ player
+			cost += 500;
+		} else {
+			// live band
+			cost += 1000;
+		}
+	}
 }
