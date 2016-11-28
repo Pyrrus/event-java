@@ -48,10 +48,6 @@ type any thing    | if you type "q." It will go on the next item. if not it will
 
 * Java
 
-## Link
-
-http://pyrrus.github.io/pizza-oop
-
 ### License
 
 *GPL*
